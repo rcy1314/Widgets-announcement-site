@@ -109,7 +109,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
                 margin: '0.25em 0',
             },
             className: className || '',
-        }, buttonLabel || '确认');
+        }, buttonLabel || 'Submit');
     }
     function createMessageArea() {
         return createElement('div', { className: 'res-message-area' });
@@ -193,7 +193,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
                     }
                     catch (error) {
                         console.error(error);
-                        displayMessage('错误：来自服务器的响应无效！请重试.', 'failure');
+                        displayMessage('Error: 来自服务器的响应无效！请重试.', 'failure');
                     }
                 });
             }
