@@ -109,7 +109,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
                 margin: '0.25em 0',
             },
             className: className || '',
-        }, buttonLabel || 'Submit');
+        }, buttonLabel || '发送');
     }
     function createMessageArea() {
         return createElement('div', { className: 'res-message-area' });
@@ -193,14 +193,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
                     }
                     catch (error) {
                         console.error(error);
-                        displayMessage('Error: 来自服务器的响应无效！请重试.', 'failure');
+                        displayMessage('Error: invalid response from the server! Please try again.', 'failure');
                     }
                 });
             }
             function handleError(error) {
                 let { message } = error;
                 if (message === 'Failed to fetch') {
-                    message = '无法连接到服务器。请稍后再试一次.';
+                    message = 'Failed to connect to the server. Please try again in a few moments.';
                 }
                 displayMessage(`Error: ${message} 😢`, 'failure');
             }
