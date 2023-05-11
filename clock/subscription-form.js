@@ -85,7 +85,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     function createFieldLabel(index, textContent, className) {
         return createElement('label', {
             htmlFor: fieldId(index),
-            textContent: textContent || 'Newsletter邮件订阅:',
+            textContent: textContent || '邮件订阅:',
             className: className || '',
             style: {
                 marginRight: '0.5em',
