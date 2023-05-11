@@ -20,7 +20,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
             const { dataset } = script;
             const { feedId } = dataset;
             if (!feedId) {
-                console.error('RES初始化错误：缺少data-feed-id');
+                console.error('RES init error: data-feed-id is missing');
                 return;
             }
             const { fieldLabelText, fieldLabelClassName, fieldPlaceholder, fieldTextboxClassName, buttonClassName, buttonLabel, } = dataset;
